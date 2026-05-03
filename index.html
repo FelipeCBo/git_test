@@ -1,93 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!DOCTYPE html> <!---Fala para o navegador como abrir o documento da maneira padrao ao html5  -->
+<html lang="pt"> <!---ensina o que é uma pagina web-->
+<head> <!--- define o cabeçalho da pagina-->
+    <meta charset="UTF-8"> <!---serve para definir os carcteres que serão utilizados-->
+    <meta name="viewport"   content="width=device-width, initial-scale=1.0"> <!---deteca o tamanho na tela ao qual está sendo exibida e se alterá caso necessario-->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>SCP-3008</title> <!---serve para dar nome á pagina que está sendo vistas-->
+</head> <!---fecha o cabeçalho-->
+<body> <!---tudo que aparece na tela-->
 
-    <div>
-        <h1 id="titulo">Cadastro de DEV's</h1>
-        <p id="subtitulo">Complete suas informações</p>
-    </div>
+    
 
-    <div>
-        <form>
-            <fieldset class="grupo">
-                <div>
-                    <label for="nome"><strong>Nome:</strong></label>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
-                <div>
-                    <label for="sobrenome"><strong>Sobrenome:</strong></label>
-                    <input type="text" name="sobrenome" id="sobrenome" required>
-                </div>
-            </fieldset>
+    <div class="header">
+        <div class="title"><h1>Título do site</h1></div>
 
-            <div class="campo">
-                <label for="email"><strong>Email:</strong></label>
-                <input type="email" name="email" id="email" required>
-            </div>
-
-            <div class="campo">
-                <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
-                <br>
-                <label>
-                    <input type="radio" name="devweb" value="frontend" checked>Front-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" value="backend">Back-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" value="fullstack">Fullstack
-                </label>
-            </div>
-
-            <div class="campo">
-                <label for="senioridade"><strong>Senioridade:</strong></label>
-                <br>
-                <select id="senioridade">
-                    <option selected disabled value="">Selecione...</option>
-                    <option>Junior</option>
-                    <option>Pleno</option>
-                    <option>Senior</option>
-                </select>
-            </div>
-
-            <fieldset class="grupo">
-                <div>
-                    <label><strong>Selecione as tecnologias que utiliza:</strong></label>
-                    <br>
-                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-                    <label for="tecnologia1">HTML</label>
-                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
-                    <label for="tecnologia2">CSS</label>
-                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
-                    <label for="tecnologia3">JavaScript</label>
-                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
-                    <label for="tecnologia4">PHP</label>
-                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
-                    <label for="tecnologia5">C#</label>
-                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
-                    <label for="tecnologia6">Python</label>
-                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
-                    <label for="tecnologia7">Java</label>
-                </div>
-            </fieldset>
-
-            <div class="campo">
-                <label><strong>Conte um pouco da sua experiência:</strong></label>
-                <br>
-                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-            </div>
+        <div class="nav-bar">
             
-            <button type="submit" class="botao">Concluído</button>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">Classes de Objeto</a>
+                        <ul>
+                            <li><a href="#">Safe</a></li>
+                            <li><a href="#">Euclid</a></li>
+                            <li><a href="#">Keter</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sobre a fundação</a></li>
 
-        </form>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+        
+    <div class="card"> <!---div, é usado para agrupar, separar e organizar as informações de uma página, e uma classe, é aquela a qual atributos podem ser adcionados e modificados-->     
+        <h2>SCP-3008</h2> <!---faz parte da hieraquia de titulos do html, indo de h1 a h6 (indo do mais importante a menos importante) --> 
+        <img src="https://www.rpnation.com/proxy.php?image=https%3A%2F%2Fcontent.fortune.com%2Fwp-content%2Fuploads%2F2017%2F06%2Fikea-store.jpg&hash=9929bae0b2e55d085a4a74762cd3a9dc" alt="Uma loja IKEA a noite"> <!----atributo principal da classe-->
+        <div class="card-content"> <!---inicia os atributos dentro da classe (após a imagem, que é o centro da classe)-->   
+            
+            <p class="card-description">
+                <strong>Codinome:</strong> IKEA Infinita<br>
+                <strong>Classe de Objeto:</strong> Euclídeo<br>
+                <strong>Procedimentos Especiais de Contenção:</strong> O terreno onde SCP-3008 é contido foi comprado pela Fundação e convertido no Sítio ██.  <!--- "p" serve nesse caso para ser aquele que inicia uma aréa de texto de leitura na página. 
+    
+                "b" serve pra deixar o texto em negrito. Mas é melhor usar "strong"
+                "br" serve por sua vez pra "quebrar" o texto e ir para proxima linha.-->
+                Todas estradas públicas que vão para ou passam pelo Sítio ██ foram redirecionadas.<br>
+                A entrada de SCP-3008 deve ser monitorada a todo momento, e ninguém deve entrar em SCP-3008, exceto durante testes, conforme permitido pelo Pesquisador Sênior.<br>
+                Humanos que saiam de SCP-3008 devem ser detidos e interrogados antes de administração de amnésicos. Dependendo da duração de sua estadia em SCP-3008, uma história falsa deve ser gerada para antes de serem soltos.<br>
+                Quaisquer outras entidades saindo de SCP-3008 devem ser exterminados.<br>
+                <b>Descrição:</b> SCP-3008 é um grande pedaço de terra anteriormente sob a posse de IKEA, uma rede de lojas de móveis popular. Uma pessoa que adentra SCP-3008 pela entrada principal e perde de vista as portas irá ser translocada para SCP-3008-1. 
+                O deslocamento tipicamente não será notado já que nenhuma mudança ocorrerá na perspectiva da vítima; normalmente não notarão até que tentem retornar para a entrada.<br> 
+                SCP-3008-1 é um espaço que lembra o interior de uma loja de móveis IKEA, se estendendo muito além dos limites do que poderia ser fisicamente contido dentro do terreno. 
+                Medidas atuais indicam que trata-se de uma área de pelo menos 10km2 sem qualquer limite visível em qualquer direção. Talvez seja infinito.<br>
+                SCP-3008-2 são entidades humanoides que existem dentro de SCP-3008-1. Embora lembrem superficialmente humanos, possuem proporções corporais exageradas e inconsistentes, geralmente descritos como sendo muito baixos ou muito altos. 
+                Eles não possuem nenhuma característica facial e em todos casos observados, vestem uma camisa amarela e bermudas azuis, condizentes com o uniforme dos funcionários do IKEA.<br>
+                SCP-3008-1 possui um ciclo rudimentar de dia e noite, determinado pela iluminação no teto acendendo e apagando em períodos consistentes com as horas de abertura e fechamento da loja original. 
+                Durante a "noite", instâncias de SCP-3008-2 vão se tornar violentas à todas outras formas de vida dentro de SCP-3008-1. 
+                Durante esses surtos de violência, eles já foram relatados vocalizando frases em Português que são geralmente variações de "A loja já fechou, por favor, saia do estabelecimento". 
+                Uma vez que o "dia" começa, instâncias de SCP-3008-2 imediatamente se tornam passivas e começam a vagar por SCP-3008-1, aparentemente de forma aleatória. 
+                Eles não respondem a questionamento ou outras comunicações verbais nesse estado, porém vão reagir violentamente se atacados.<br>
+                SCP-3008-1 é habitado por um número desconhecido de civis aprisionados antes da contenção.
+                Dados coletados sugerem que eles formaram uma civilização rudimentar lá dentro, incluindo a construção de assentamentos e fortificações com o propósito de se defender contra os SCP-3008-2.
+            </p>
+
+        </div>
+
     </div>
 
-    <script src="javascript.js"></script>
+    <a href="form.html" style="margin: 10px;">Form</a>
+    <a href="1.html" style="margin: 10px;">1</a>
+    <a href="untitled-1.html" style="margin: 10px;">untitled-1</a>
+
 </body>
 </html>
